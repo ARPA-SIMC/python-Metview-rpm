@@ -6,7 +6,7 @@ Release:        %{releaseno}%{?dist}
 Summary:        Python bindings for Metview
 
 License:        Apache License, Version 2.0
-URL:            https://pypi.org/project/Magics/
+URL:            https://pypi.org/project/python-metview/
 Source0:        https://pypi.org/packages/source/m/metview/metview-%{version}.tar.gz
 BuildArch:      noarch
 
@@ -45,7 +45,7 @@ Python bindings for Metview
 # TODO: it seems that the tests are missing
 # %{__python3} setup.py test
 
-%files -n python3-Magics
+%files
 %doc README.rst
 %{python3_sitelib}/*
 
