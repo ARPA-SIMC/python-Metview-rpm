@@ -17,7 +17,7 @@ BuildRequires:  python3-numpy
 BuildRequires:  python3-pandas
 BuildRequires:  python3-pyyaml
 BuildRequires:  python3-requests
-BuildRequires:  Metview
+BuildRequires:  Metview >= 5.0.3
 BuildRequires:  python3-pytest
 
 Requires:       python3-cffi
@@ -25,7 +25,7 @@ Requires:       python3-numpy
 Requires:       python3-pandas
 Requires:       python3-pyyaml
 Requires:       python3-requests
-Requires:       Metview
+Requires:       Metview >= 5.0.3
 
 
 %description
