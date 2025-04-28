@@ -47,7 +47,7 @@ Python bindings for Metview
 
 %files
 %doc README.rst
-%{python3_sitelib}/*
+%{python3_sitelib}/metview/*
 
 
 %changelog
