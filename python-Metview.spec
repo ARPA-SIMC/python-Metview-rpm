@@ -48,6 +48,9 @@ Python bindings for Metview
 %files
 %doc README.rst
 %{python3_sitelib}/metview/*
-
+%{python3_sitelib}/metview*.egg-info/*
+%exclude %{python3_sitelib}/tests/*
 
 %changelog
+* Mon Apr  8 2025 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.16.1-1
+- Initial package
