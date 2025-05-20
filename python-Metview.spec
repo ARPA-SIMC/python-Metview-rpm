@@ -1,4 +1,4 @@
-%global releaseno 2
+%global releaseno 3
 
 Name:           python-Metview
 Version:        1.16.1
@@ -21,15 +21,21 @@ BuildRequires:  python3-requests
 BuildRequires:  Metview >= 5.0.3
 BuildRequires:  python3-pytest
 
+
+%description
+Python bindings for Metview
+
+%package -n python3-Metview
+Summary:        Python3 bindings for Magics
 Requires:       python3-cffi
 Requires:       python3-numpy
 Requires:       python3-pandas
 Requires:       python3-pyyaml
 Requires:       python3-requests
 Requires:       Metview >= 5.0.3
+Obsoletes:      python-Metview
 
-
-%description
+%description -n python3-Metview
 Python bindings for Metview
 
 
@@ -46,7 +52,7 @@ Python bindings for Metview
 # TODO: it seems that the tests are missing
 # %{__python3} setup.py test
 
-%files
+%files -n python3-Metview
 %doc README.rst
 %{python3_sitelib}/metview/*
 %{python3_sitelib}/metview*.egg-info/*
