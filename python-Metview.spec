@@ -1,4 +1,4 @@
-%global releaseno 1
+%global releaseno 2
 
 Name:           python-Metview
 Version:        1.16.1
@@ -14,6 +14,7 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-cffi
 BuildRequires:  python3-numpy
+BuildRequires:  python3-pip
 BuildRequires:  python3-pandas
 BuildRequires:  python3-pyyaml
 BuildRequires:  python3-requests
@@ -52,5 +53,8 @@ Python bindings for Metview
 %exclude %{python3_sitelib}/tests/*
 
 %changelog
+* Tue May 20 2025 Daniele Branchini <dbranchini@arpae.it> - 1.16.1-2
+- Added python3-pip for copr Fedora build
+
 * Mon Apr  8 2025 Emanuele Di Giacomo <edigiacomo@arpae.it> - 1.16.1-1
 - Initial package
