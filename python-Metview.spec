@@ -59,6 +59,9 @@ Python bindings for Metview
 %exclude %{python3_sitelib}/tests/*
 
 %changelog
+* Wed May 21 2025 Daniele Branchini <dbranchini@arpae.it> - 1.16.1-3
+- Renamed package to python3-Metview
+
 * Tue May 20 2025 Daniele Branchini <dbranchini@arpae.it> - 1.16.1-2
 - Added python3-pip for copr Fedora build
 
